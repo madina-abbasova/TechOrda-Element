@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Registration</title>
+    <style>
+        label{display:block;}
+    </style>
+</head>
+<body>
+    <h1>Register Form</h1>
+
+    <form>
+    <fieldset>
+        <legend>User Info</legend>
+        <label for="firstname"><input type="text" id="firstname" required>Enter your first name</label>
+        <label for="lastname"><input type="text" id="lastname">Enter your last name</label>
+        <label for="password"><input type="password" id="password">Enter your password</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Gender</legend>
+        <label for="male"><input type="radio" id="male" name="gender">Male</label>  
+        <label for="female"><input type="radio" id="female" name="gender">Female</label>
+        <label></label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Checkbox</legend>
+        <p>Which vehicle do you have?</p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Additional info</legend>
+        <input type="email" placeholder="email"/>
+        <input type="password" placeholder="password"/>
+        <input type="date" placeholder="date"/>
+        <input type="tel" placeholder="phone number"/>
+    </fieldset>
+    </form>
+
+    <button type="button" onclick="location.href='login.html';">Click here to log in</button>
+    
+</body>
+</html>
